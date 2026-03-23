@@ -36,5 +36,13 @@ EOF
                 '''
             }
         }
+        stage('Run') {
+            steps {
+                sh '''
+                  . venv/bin/activate
+                  python Python.py
+                '''
+            }
+        }
     }
 }
