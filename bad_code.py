@@ -1,11 +1,3 @@
-# bad_code.py
+import os
 
-def divide(a, b):
-    return a / b   # Possible ZeroDivisionError
-
-def unused_function():
-    x = 10
-    y = 20
-    return x + y
-
-password = "admin123"  # Hardcoded password (security issue)
+password = os.getenv("APP_PASSWORD")
